@@ -3,37 +3,55 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
         <title>サイト模写</title>
         <style>
             html, body {
+                background-image: url("img/saboten no hana.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
                 margin: 0;
                 padding: 0;
                 width: 100%;
-                 background-color:#FFE4B5; 
+                background-color:#FFE4B5; 
             }
-            .saboten {
-                border-radius: 25%; 
+
+        header {
+                background-color: #ffdab9;
+                padding: 0px;
+                display: flex;
+                justify-content: center;
+             }
+         footer {
+                background-color: #ffdab9;
+                padding: 0px;
                 text-align: center;
-                margin: 40px;
-            }
-            section {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                }
+          
+         section {
                 text-align: center;
                 background-color: #FFE4B5;
+                padding: 5px;
             }
+
             .image-button {
                 display: inline-block;
-                padding: 8px 16px;
+                padding: 10px 20px;
                 margin:auto;
                 background-color: #ffdab9;
                 color: rgb(238, 16, 131);
-                text-decoration: none;
-                border-radius: 25%;
+                border-radius: 15%;
                 font-size: medium;
                 cursor: pointer;
                 transition: 1s;
-                font-weight: 900;
-                font-family: "Zen Maru Gothic", sans-serif;
-            }
+\            }
             .image-button:hover {
                 background-color: #FFE4B5;
             }
@@ -41,27 +59,54 @@
                 width: 70px;
                 height: 70px;
                 border-radius: 50%;
+            }
 
+            h1{
+                font-family: 'Josefin Slab', serif;
+                color: rgb(238, 16, 131);
+            }
+            div {
+                background-color: #FFE4B5;
+                padding: 10px;
+                border-radius: 10px;
+                display: inline-block;
+                margin-top: 10px;
             }
              
         </style>
     </head>
+
+    <header>
+        <nav>   
+            <a href="page1.html" class="image-button">
+            <img src="iconimages/CSScake.png" alt="次へ">
+            <a href="page2.html" class="image-button">
+            <img src="iconimages/JAVAcake.png" alt="次へ">
+            <a href="page3.html" class="image-button">
+            <img src="iconimages/PHPcake.png" alt="次へ">
+            </a>
+        </nav>
+    </header>
+
+<main>   
     <section>
-       
-        <a href="page1.html" class="image-button">
-        <img src="iconimages/CSScake.png" alt="次へ">
-        <a href="page2.html" class="image-button">
-        <img src="iconimages/JAVAcake.png" alt="次へ">
-        <a href="page3.html" class="image-button">
-        <img src="iconimages/PHPcake.png" alt="次へ">
-    </a>
-    </section>
-    <section>
-        <img src="img/saboten no hana.png" alt="サイト模写の画像" class="saboten">
         <body>
+            <div>
             <h1 class="title">未経験から開発の仕事をしよう！</h1>
             <p>自分のPCでWebページを制作する方法を学習しましょう。</p>
+            </div>
         </body>
     </section>
+</main>
+
+<footer>
+    <nav>
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">利用規約</a>
+        <a href="#">お問い合わせ</a>
+            <p>&copy; 2026 MOSHAofSITE All Rights Reserved.</p>
+
+    </nav>
+</footer>
 
 </html>
